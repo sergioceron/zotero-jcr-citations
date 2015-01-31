@@ -1,34 +1,34 @@
 <?xml version="1.0"?>
 
-<!DOCTYPE overlay SYSTEM "chrome://zoteroscholarcitations/locale/overlay.dtd">
+<!DOCTYPE overlay SYSTEM "chrome://zoterojcrcitations/locale/overlay.dtd">
 
 <overlay
-    id="zoteroscholarcitations"
+    id="zoterojcrcitations"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
     <script
         type="application/x-javascript"
-        src="chrome://zoteroscholarcitations/content/scripts/zoteroscholarcitations.js"/>
+        src="chrome://zoterojcrcitations/content/scripts/zoterojcrcitations.js"/>
 
     <stringbundleset id="stringbundleset">
         <stringbundle
-            id="zoteroscholarcitations-bundle"
-            src="chrome://zoteroscholarcitations/locale/zoteroscholarcitations.properties"/>
+            id="zoterojcrcitations-bundle"
+            src="chrome://zoterojcrcitations/locale/zoterojcrcitations.properties"/>
     </stringbundleset>
 
     <menupopup id="zotero-tb-actions-popup">
         <menuitem
-            id="zoteroscholarcitations-tb-actions-export-playground"
-            label="&zotero.scholarcitations.updateAll.label;"
+            id="zoterojcrcitations-tb-actions-export-playground"
+            label="&zotero.jcrcitations.updateAll.label;"
             insertbefore="zotero-tb-actions-utilities-separator"
-            oncommand="Zotero.ScholarCitations.updateAll();"/>
+            oncommand="Zotero.JCRCitations.updateAll();"/>
     </menupopup>
 
     <popup id="zotero-collectionmenu">
         <menuitem
             id="zotero-collectionmenu-scholarcitations"
-            label="&zotero.scholarcitations.update.label;"
-            oncommand="Zotero.ScholarCitations.updateSelectedEntity()"/>
+            label="&zotero.jcrcitations.update.label;"
+            oncommand="Zotero.JCRCitations.updateSelectedEntity()"/>
     </popup>
 
     <popup
@@ -36,7 +36,7 @@
         onpopupshowing="ZoteroPane.buildItemContextMenu();">
         <menuitem
             id="zotero-itemmenu-scholarcitations"
-            label="&zotero.scholarcitations.update.label;"
-            oncommand="Zotero.ScholarCitations.updateSelectedItems()"/>
+            label="&zotero.jcrcitations.update.label;"
+            oncommand="Zotero.JCRCitations.updateSelectedItems()"/>
     </popup>
 </overlay>
